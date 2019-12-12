@@ -189,7 +189,7 @@ spec:
         - name: OPERATOR_ENV
           value: prod
         - name: WATCH_NAMESPACE
-	  value: *
+          value: "*"
         - name: CURRENT_NAMESPACE
           valueFrom:
             fieldRef:
