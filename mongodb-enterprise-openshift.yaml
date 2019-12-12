@@ -189,11 +189,7 @@ spec:
         - name: OPERATOR_ENV
           value: prod
         - name: WATCH_NAMESPACE
-
-          valueFrom:
-            fieldRef:
-              fieldPath: metadata.namespace
-
+	  value: *
         - name: CURRENT_NAMESPACE
           valueFrom:
             fieldRef:
